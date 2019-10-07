@@ -36,7 +36,7 @@ def main(data):
                         query_string = ''
 
                     sys.stdout.write('{schema}://{auth}{domain_name}{port}/{path}{query}{fragment}\n\r'.format(
-                                                        schema=item.get('schema'),
+                                                        schema=item.get('scheme'),
                                                         domain_name=item.get('domain_name'),
                                                         port=':{}'.format(item.get('port')) if item.get('port') else '',
                                                         path=item.get('path') if item.get('path') else '',
